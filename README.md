@@ -1,22 +1,39 @@
 # Ecommerce_FullStack 
 
-### Back-End
+## Back-End
 
-API Design
+### API Design
+
+- http://localhost:8080/api/checkout/purchase [POST]
+
+- http://localhost:8080/api/products  [GET]
+- http://localhost:8080/api/products/:id  [GET]
+- http://localhost:8080/api/products/:id/product-categories  [GET]
+
+- http://localhost:8080/api/product-categories  [GET]
+- http://localhost:8080/api/product-categories/:id  [GET]
+- http://localhost:8080/api/product-categories/:id/product  [GET]
 
 - http://localhost:8080/api/countory  [GET]
 - http://localhost:8080/api/countory/:id  [GET]
+- http://localhost:8080/api/countory/:id/state  [GET]
+
 - http://localhost:8080/api/state [GET]
 - http://localhost:8080/api/state/:id [GET]
 - http://localhost:8080/api/state/:id/country [GET]
 - http://localhost:8080/api/state/search/findByCountryCode?code=BR  [GET]
 
-Database Structure
+Paging and Sizing using this params (page=4&size=20)
+
+Eg; http://localhost:8080/api/products?page=4&size=20
+
+
+### Database Structure
 
 ![image](https://user-images.githubusercontent.com/84829442/158533906-de5bd5f6-f0bd-46c8-b125-cbae760319a4.png)
 
 
-### Front-End 
+## Front-End 
 - Search products by name 
 - Filter products by category 
 - Pagination for products (For much amount of data) 
