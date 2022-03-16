@@ -1,7 +1,22 @@
 # Ecommerce_FullStack 
-This project is currently in developing mode 
 
-### Currently in Front-End 
+### Back-End
+
+API Design
+
+- http://localhost:8080/api/countory  [GET]
+- http://localhost:8080/api/countory/:id  [GET]
+- http://localhost:8080/api/state [GET]
+- http://localhost:8080/api/state/:id [GET]
+- http://localhost:8080/api/state/:id/country [GET]
+- http://localhost:8080/api/state/search/findByCountryCode?code=BR  [GET]
+
+Database Structure
+
+![image](https://user-images.githubusercontent.com/84829442/158533906-de5bd5f6-f0bd-46c8-b125-cbae760319a4.png)
+
+
+### Front-End 
 - Search products by name 
 - Filter products by category 
 - Pagination for products (For much amount of data) 
